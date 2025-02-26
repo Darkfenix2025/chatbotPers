@@ -1,0 +1,4 @@
+node_modules/
+
+#claves api
+.env
