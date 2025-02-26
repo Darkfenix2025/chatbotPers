@@ -203,6 +203,8 @@ function App() {
             if (messages.length === 0) {
                 const systemResult = await chatSession.current.sendMessage(systemPrompt);
                 const systemResponse = await systemResult.response; // No se usa, pero se define
+                console.log("systemResult:", systemResult);
+                console.log("systemResponse:", systemResponse);
             }
 
             const result = await chatSession.current.sendMessage(input);
