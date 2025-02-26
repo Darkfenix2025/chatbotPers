@@ -1,0 +1,65 @@
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* O la altura que desees */
+  width: 800px; /* O el ancho que desees */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Para que el scroll funcione bien */
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%; /* Para que los mensajes no ocupen todo el ancho */
+}
+
+.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; /* Mensajes del usuario a la derecha */
+}
+
+.bot {
+  background-color: #f0f0f0;
+  color: black;
+  align-self: flex-start; /* Mensajes del bot a la izquierda */
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none; /* Para que el usuario no pueda redimensionar el textarea */
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-input button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
